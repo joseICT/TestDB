@@ -52,7 +52,8 @@ class DcargosController extends Controller
      */
     public function show($id)
     {
-        
+        $users=DB::table('users')->where('id',$id)->first();
+        return view('crud.Usuario',compact('users'));
     }
 
     /**

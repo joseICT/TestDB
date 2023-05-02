@@ -5,25 +5,31 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class DcargosController extends Controller
+class InventarioController extends Controller
 {
+    // es una prueba aun no funciona
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+
     public function list(){
-        $users=DB::table('users')->get();
-        dd($users);
-        return view('crud.lista',compact('users'));
+        $inventario=DB::table('inventa')->get();
+        dd($invetario);
+        //$ventas=DB::table('dcargos')->get();
+        //dd($ventas);
+        //$bodega=DB::table('dmovim')->get();
+        //dd($bodega);
+        return view('testview',compact('inventario'));
     }
+
 
     public function index()
     {
-        
+        //
     }
 
-    
     /**
      * Show the form for creating a new resource.
      *
@@ -42,7 +48,7 @@ class DcargosController extends Controller
      */
     public function store(Request $request)
     {
-        
+        //
     }
 
     /**
@@ -53,8 +59,7 @@ class DcargosController extends Controller
      */
     public function show($id)
     {
-        $users=DB::table('users')->where('id',$id)->first();
-        return view('crud.Usuario',compact('users'));
+        //
     }
 
     /**

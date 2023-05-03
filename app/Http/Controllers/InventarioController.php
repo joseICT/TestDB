@@ -15,13 +15,10 @@ class InventarioController extends Controller
      */
 
     public function list(){
-        $inventario=DB::table('inventa')->get();
-        dd($invetario);
-        //$ventas=DB::table('dcargos')->get();
-        //dd($ventas);
-        //$bodega=DB::table('dmovim')->get();
-        //dd($bodega);
-        return view('testview',compact('inventario'));
+        $inventario=DB::table('toma_inventario')->get();
+        dd($inventario);
+
+        return view('testview',compact('toma_inventario'));
     }
 
 

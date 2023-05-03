@@ -12,7 +12,7 @@ use Illuminate\support\Facades\route;
 */
 
 Route::get('/', function () {
-    return view('/welcome');
+    return view('/auth/login');
 });
 
 Auth::routes();
@@ -23,4 +23,4 @@ Route::get('/users','DcargosController@list');
 
 Route::get('/{id}','DcargosController@show');
 
-Route::get('/numeros','InventarioController@list');
+Route::get('/inventario','InventarioController@list');

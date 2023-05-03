@@ -14,8 +14,8 @@ class DcargosController extends Controller
      */
     public function list(){
         $users=DB::table('users')->get();
-        dd($users);
         return view('crud.lista',compact('users'));
+
     }
 
     public function index()

@@ -3,33 +3,29 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-
-class DcargosController extends Controller
+class TestController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function __construct()
-{
-    $this->middleware('auth');
-    
-}
-    public function list(){
-        $users=DB::table('users')->get();
-        return view('crud.lista',compact('users'));
-
-    }
-
     public function index()
     {
         
     }
+    public function list(){
+        $users=DB::table('users')->get();
+        return view('vistaModal',compact('users'));
 
-    
+    }
+
+    public function __construct()
+{
+    $this->middleware('auth');
+}
+
     /**
      * Show the form for creating a new resource.
      *
@@ -48,7 +44,7 @@ class DcargosController extends Controller
      */
     public function store(Request $request)
     {
-        
+        //
     }
 
     /**
@@ -59,8 +55,7 @@ class DcargosController extends Controller
      */
     public function show($id)
     {
-        $users=DB::table('users')->where('id',$id)->first();
-        return view('crud.Usuario',compact('users'));
+        //
     }
 
     /**

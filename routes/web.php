@@ -23,4 +23,6 @@ Route::get('/users','DcargosController@list');
 
 Route::get('/{id}','DcargosController@show');
 
-Route::get('/inventario','InventarioController@list');
+Route::get('/vista','TestController@list');
+
+

@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -15,7 +16,7 @@
                     @endif
 
                     Ingresaste</br>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="{{ url('vista') }}">
                     boton modal
                     @extends('vistaModal')
                     </button>
@@ -25,3 +26,5 @@
     </div>
 </div>
 @endsection
+
+

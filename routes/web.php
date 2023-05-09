@@ -21,8 +21,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/users','DcargosController@list');
 
-Route::get('/{id}','DcargosController@show');
+Route::get('/users/{id}','DcargosController@show');
 
 Route::get('/vista','TestController@list');
+
+Route::get('/producto','ProductoController@list');
 
 

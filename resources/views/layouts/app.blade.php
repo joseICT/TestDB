@@ -44,6 +44,9 @@
                     <li class="navbar-brand">
                     <a class="nav-link" aria-current="page" href="{{ url('users') }}">Usuarios</a>
                     </li>
+                    <li class='navbar-brand'>
+                    <a class="nav-link" aria-current="page" href="{{ url('producto') }}">Producto</a>
+                    </li>
                     @endguest
                     </ul>
 
